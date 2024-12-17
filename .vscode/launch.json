@@ -1,0 +1,51 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            // for cityscapes
+            // for train
+            // "args":["myexp/configs/cascade_rcnn_r50_fpn_freq_da_cityscapes.py",
+            // "--work-dir","work_dirs/cityscapes_series/cascade_rcnn_r50_fpn_freq_da_cityscapes_mutli_scale",
+            // "--gpu-ids","0"]
+            // for test
+            // "args":["myexp/configs/cascade_rcnn_r50_fpn_freq_da_cityscapes.py",
+            // "work_dirs/cityscapes_series/cascade_rcnn_r50_fpn_freq_da_cityscapes_no_cosist/best_bbox_mAP_epoch_6.pth",
+            // "--work-dir","work_dirs/cityscapes_series/cascade_rcnn_r50_fpn_freq_da_cityscapes_no_cosist",
+            // "--eval","bbox",]
+            // "--show-dir","work_dirs/cityscapes_series/cascade_rcnn_r50_fpn_freq_da_cityscapes_no_cosist/result"
+        // ]
+
+        // for S-UODAC2020
+            // for train
+            // "args":["myexp/configs/cascade_rcnn_r50_fpn_freq_da_S-UODAC2020.py",
+            // "--work-dir","work_dirs/S-UODAC2020/test",
+            // "--gpu-ids","1"]
+            // for test
+            "args":["myexp/configs/cascade_rcnn_r50_fpn_freq_da_S-UODAC2020.py"]
+            // "work_dirs/S-UODAC2020/mutli_scale/best_bbox_mAP_epoch_24.pth",
+            // "--eval","bbox",
+            // "--gpu-ids","1"]
+            // "--show-dir","work_dirs/S-UODAC2020/mutli_scale/result"]
+
+        // for deepfish
+            // for train
+            // "args":["myexp/configs/cascade_rcnn_r50_fpn_freq_da_deepfish.py",
+            // "--work-dir","work_dirs/deepfish/w1_0.1_w2_0.2",
+            // "--gpu-ids","0"]
+            // for train
+            // "args":["myexp/configs/cascade_rcnn_r50_fpn_freq_da_deepfish.py",
+            // "work_dirs/deepfish/class02/best_bbox_mAP_epoch_9.pth",
+            // "--work-dir","work_dirs/deepfish/class12",
+            // "--eval","bbox"]
+        }
+    ]
+}
